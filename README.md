@@ -1,36 +1,175 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📚 EXPL·AI — Study Topic Explainer
 
-## Getting Started
+> Enter any study topic and get a clear, student-friendly explanation instantly — powered by Groq + Llama 3.3.
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js)
+![Groq](https://img.shields.io/badge/Groq-LLaMA_3.3-orange?style=flat-square)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38bdf8?style=flat-square&logo=tailwindcss)
+![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
+
+---
+
+## ✨ What is this?
+
+**EXPL·AI** is a minimalist AI-powered study tool that explains any topic in a clear, student-friendly way. Just type a topic — like *Photosynthesis*, *Newton's Laws*, or *Binary Search* — and get an instant breakdown with definitions, key concepts, real-world examples, and why it matters.
+
+---
+
+## 🚀 Live Demo
+
+👉 **[my-ai-app.vercel.app](https://my-ai-app.vercel.app)** *(update with your actual Vercel URL after deploying)*
+
+---
+
+## 🖼️ Screenshots
+
+| Home | Explanation |
+|------|-------------|
+| Clean minimal input UI | Structured AI explanation |
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Framework | [Next.js 16](https://nextjs.org/) (App Router) |
+| Language | TypeScript |
+| Styling | Tailwind CSS |
+| AI Model | Llama 3.3 70B via [Groq API](https://groq.com/) |
+| Deployment | [Vercel](https://vercel.com/) |
+
+---
+
+## ⚡ Features
+
+- 🔍 **Instant explanations** for any study topic
+- 🧠 **Student-friendly format** — definitions, key points, real-world examples
+- 💨 **Blazing fast** — powered by Groq's ultra-low latency inference
+- 🎨 **Minimalist UI** — clean, distraction-free, eye-catching design
+- 📱 **Fully responsive** — works on mobile and desktop
+- 🆓 **Free to use** — Groq free tier, no credit card needed
+- 🔒 **Secure** — API keys never exposed to the browser
+
+---
+
+## 🏁 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- A free [Groq API key](https://console.groq.com)
+
+### Installation
 
 ```bash
+# 1. Clone the repository
+git clone https://github.com/Kaushik-dasa/my-ai-app.git
+cd my-ai-app
+
+# 2. Install dependencies
+npm install
+
+# 3. Set up environment variables
+cp .env.example .env.local
+# Add your Groq API key to .env.local
+
+# 4. Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔑 Environment Variables
 
-## Learn More
+Create a `.env.local` file in the root of your project:
 
-To learn more about Next.js, take a look at the following resources:
+```env
+GROQ_API_KEY=your_groq_api_key_here
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Get your free Groq API key at [console.groq.com](https://console.groq.com) — no credit card required.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📁 Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+my-ai-app/
+├── app/
+│   ├── api/
+│   │   └── explain/
+│   │       └── route.ts        # Groq API integration
+│   ├── globals.css             # Global styles
+│   ├── layout.tsx              # Root layout
+│   └── page.tsx                # Main UI page
+├── components/
+│   ├── TopicInput.tsx          # Input + submit button
+│   └── ExplanationCard.tsx     # Explanation display card
+├── .env.local                  # Environment variables (not committed)
+├── .env.example                # Example env file
+└── README.md
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🌐 Deploying to Vercel
+
+1. Push your code to GitHub (see below)
+2. Go to [vercel.com](https://vercel.com) and sign in with GitHub
+3. Click **"Add New Project"** and import your repo
+4. Under **Environment Variables**, add:
+   - `GROQ_API_KEY` = your Groq API key
+5. Click **Deploy** 🎉
+
+---
+
+## 📤 Pushing to GitHub
+
+```bash
+# Initialize git (if not already done)
+git init
+
+# Add all files
+git add .
+
+# First commit
+git commit -m "🚀 Initial commit — EXPL·AI Study Topic Explainer"
+
+# Add your GitHub remote
+git remote add origin https://github.com/YOUR_USERNAME/my-ai-app.git
+
+# Push to GitHub
+git push -u origin main
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to open an issue or submit a pull request.
+
+1. Fork the repository
+2. Create your feature branch: `git checkout -b feature/my-feature`
+3. Commit your changes: `git commit -m 'Add my feature'`
+4. Push to the branch: `git push origin feature/my-feature`
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+Built with ❤️ by **Kaushik** · [github.com/Kaushik-dasa](https://github.com/Kaushik-dasa)
+
+---
+
+> *"The best way to learn is to explain it simply."* — Richard Feynman
