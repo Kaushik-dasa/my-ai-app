@@ -2,11 +2,12 @@
 
 > Enter any study topic and get a clear, student-friendly explanation instantly — powered by Groq + Llama 3.3.
 
-!\[Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat-square\&logo=next.js)
-!\[Groq](https://img.shields.io/badge/Groq-LLaMA\_3.3-orange?style=flat-square)
-!\[TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square\&logo=typescript)
-!\[Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38bdf8?style=flat-square\&logo=tailwindcss)
-!\[License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
+[![Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js)](https://nextjs.org)
+[![Groq](https://img.shields.io/badge/Groq-LLaMA_3.3-orange?style=flat-square)](https://groq.com)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)](https://typescriptlang.org)
+[![Tailwind](https://img.shields.io/badge/Tailwind-CSS-38bdf8?style=flat-square&logo=tailwindcss)](https://tailwindcss.com)
+[![Vercel](https://img.shields.io/badge/Deployed-Vercel-black?style=flat-square&logo=vercel)](https://expl-ai.vercel.app)
+[![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
 
 \---
 
